@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include "chipmunk.h"
+
+int main(void) {
+  cpInitChipmunk();
+  cpSpace *space = cpSpaceNew();
+  space->gravity = (cpVect) {0, 300};
+  cpBody *body = cpBodyNew(1.0, 1.0);
+  body->p = (cpVect) {50, 0};
+  cpSpaceAddBody(space, body);
+  
+  cpShape *shape = cpCircleShapeNew(body, 1.0, (cpVect) {0, 0}); 
+  shape->e = 0.7;
+  cpSpaceAddShape(space, shape);
+
+  cpBody *staticBody = cpBodyNew(1e6, 1e6);
+
+  cpVect a = cpv(0, 158);
+  cpVect b = cpv(144,  158);
+
+  cpShape *my_shape = cpSegmentShapeNew(staticBody, a, b, 1.0f);
+  my_shape->e = 1.0; my_shape->u = 1.0;
+  cpSpaceAddStaticShape(space, my_shape);
+
+  for (int i = 0; i < 300; i ++) {
+    cpSpaceStep(space, 1/60.0);
+    printf("position of ball is (%f, %f)\n", body->p.x, body->p.y);
+    printf("position of floor is (%f, %f)\n", staticBody->p.x, staticBody->p.y);
+  }
+
+
+
+//  cpBody *floorBody = cpBodyNew(1.0, 1.0);
+//  cpShape *floorShape = cpSegmentShapeNew(floorBody, cpv(168,0), cpv(168,144), 0.0f);
+//  cpSpaceAddStaticShape(space, floorShape);
+
+
+  for (int i = 0; i < 100; i++) {
+    cpSpaceStep(space, 1 / 60.0);
+//    APP_LOG(APP_LOG_LEVEL_DEBUG, "at position (%i, %i)\n", (int)body->p.x, (int)body->p.y);
+  }
+  
+
+}

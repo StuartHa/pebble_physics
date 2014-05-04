@@ -1,0 +1,494 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CP_ARRAY_INCREMENT	chipmunk/cpArray.c	/^#define CP_ARRAY_INCREMENT /;"	d	file:
+CP_CIRCLE_SHAPE	chipmunk/cpShape.h	/^	CP_CIRCLE_SHAPE,$/;"	e	enum:cpShapeType
+CP_HASH_COEF	chipmunk/chipmunk.h	/^#define CP_HASH_COEF /;"	d
+CP_HASH_PAIR	chipmunk/chipmunk.h	/^#define CP_HASH_PAIR(/;"	d
+CP_NUM_SHAPES	chipmunk/cpShape.h	/^	CP_NUM_SHAPES$/;"	e	enum:cpShapeType
+CP_POLY_SHAPE	chipmunk/cpShape.h	/^	CP_POLY_SHAPE,$/;"	e	enum:cpShapeType
+CP_SEGMENT_SHAPE	chipmunk/cpShape.h	/^	CP_SEGMENT_SHAPE,$/;"	e	enum:cpShapeType
+DEFAULT_COUNT	chipmunk/cpSpace.c	/^#define DEFAULT_COUNT /;"	d	file:
+DEFAULT_DIM_SIZE	chipmunk/cpSpace.c	/^#define DEFAULT_DIM_SIZE /;"	d	file:
+DEFAULT_ITERATIONS	chipmunk/cpSpace.c	/^#define DEFAULT_ITERATIONS /;"	d	file:
+INFINITY	chipmunk/chipmunk.h	/^#define INFINITY /;"	d
+M_PI	chipmunk/cpBody.c	/^#define M_PI /;"	d	file:
+NUM_BALLS	Chipmunk-Demo-5.c	/^#define NUM_BALLS /;"	d	file:
+SHAPE_ID_COUNTER	chipmunk/cpShape.c	/^unsigned int SHAPE_ID_COUNTER = 0;$/;"	v
+SLEEP_TICKS	chipmunk/Demo5.c	/^#define SLEEP_TICKS /;"	d	file:
+SlideJointApplyImpulse	chipmunk/cpJoint.c	/^SlideJointApplyImpulse(cpJoint *joint)$/;"	f	file:
+SlideJointPreStep	chipmunk/cpJoint.c	/^SlideJointPreStep(cpJoint *joint, cpFloat dt_inv)$/;"	f	file:
+a	chipmunk/cpArbiter.h	/^	cpShape *a, *b;$/;"	m	struct:cpArbiter
+a	chipmunk/cpBody.h	/^	cpFloat a, w, t, w_bias;$/;"	m	struct:cpBody
+a	chipmunk/cpJoint.h	/^	cpBody *a, *b;$/;"	m	struct:cpJoint
+a	chipmunk/cpShape.h	/^	cpVect a, b, n;$/;"	m	struct:cpSegmentShape
+a	chipmunk/cpSpace.h	/^	unsigned int a;$/;"	m	struct:cpCollPairFunc
+active2staticIter	chipmunk/cpSpace.c	/^active2staticIter(void *ptr, void *data)$/;"	f	file:
+activeShapes	chipmunk/cpSpace.h	/^	cpSpaceHash *activeShapes;$/;"	m	struct:cpSpace
+addColFunc	chipmunk/cpCollision.c	/^addColFunc(cpShapeType a, cpShapeType b, collisionFunc func)$/;"	f	file:
+addContactPoint	chipmunk/cpCollision.c	/^addContactPoint(cpContact **arr, int *max, int *num)$/;"	f	file:
+alwaysCollide	chipmunk/cpSpace.c	/^alwaysCollide(cpShape *a, cpShape *b, cpContact *arr, int numCon, cpFloat normal_coef, void *data)$/;"	f	file:
+anchr1	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpPinJoint
+anchr1	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpPivotJoint
+anchr1	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpSlideJoint
+anchr2	chipmunk/cpJoint.h	/^	cpVect  anchr2;$/;"	m	struct:cpGrooveJoint
+anchr2	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpPinJoint
+anchr2	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpPivotJoint
+anchr2	chipmunk/cpJoint.h	/^	cpVect anchr1, anchr2;$/;"	m	struct:cpSlideJoint
+applyImpulse	chipmunk/cpJoint.h	/^	void (*applyImpulse)(struct cpJoint *joint);$/;"	m	struct:cpJoint
+arbiterFreeWrap	chipmunk/cpSpace.c	/^static void arbiterFreeWrap(void *ptr, void *unused){ cpArbiterFree((cpArbiter *)ptr);}$/;"	f	file:
+arbiters	chipmunk/cpSpace.h	/^	cpArray *arbiters;$/;"	m	struct:cpSpace
+arr	chipmunk/cpArray.h	/^	void **arr;$/;"	m	struct:cpArray
+axes	chipmunk/cpPolyShape.h	/^	cpPolyShapeAxis *axes;$/;"	m	struct:cpPolyShape
+b	chipmunk/cpArbiter.h	/^	cpShape *a, *b;$/;"	m	struct:cpArbiter
+b	chipmunk/cpBB.h	/^	cpFloat l, b, r ,t;$/;"	m	struct:cpBB
+b	chipmunk/cpJoint.h	/^	cpBody *a, *b;$/;"	m	struct:cpJoint
+b	chipmunk/cpShape.h	/^	cpVect a, b, n;$/;"	m	struct:cpSegmentShape
+b	chipmunk/cpSpace.h	/^	unsigned int b;$/;"	m	struct:cpCollPairFunc
+bb	chipmunk/cpShape.h	/^	cpBB bb;$/;"	m	struct:cpShape
+bbFromCircle	chipmunk/cpShape.c	/^bbFromCircle(const cpVect c, const cpFloat r)$/;"	f	file:
+bbfunc	chipmunk/cpSpace.c	/^bbfunc(void *ptr)$/;"	f	file:
+bbfunc	chipmunk/cpSpaceHash.h	/^	cpSpaceHashBBFunc bbfunc;$/;"	m	struct:cpSpaceHash
+bias	chipmunk/cpArbiter.h	/^	cpFloat bias;$/;"	m	struct:cpContact
+bias	chipmunk/cpJoint.h	/^	cpFloat bias;$/;"	m	struct:cpPinJoint
+bias	chipmunk/cpJoint.h	/^	cpFloat bias;$/;"	m	struct:cpSlideJoint
+bias	chipmunk/cpJoint.h	/^	cpVect bias;$/;"	m	struct:cpGrooveJoint
+bias	chipmunk/cpJoint.h	/^	cpVect bias;$/;"	m	struct:cpPivotJoint
+bins	chipmunk/cpSpaceHash.h	/^	cpSpaceHashBin *bins;$/;"	m	struct:cpSpaceHash
+bodies	chipmunk/cpSpace.h	/^	cpArray *bodies;$/;"	m	struct:cpSpace
+body	chipmunk/cpShape.h	/^	cpBody *body;$/;"	m	struct:cpShape
+bodyFreeWrap	chipmunk/cpSpace.c	/^static void    bodyFreeWrap(void *ptr, void *unused){    cpBodyFree((cpBody *)   ptr);}$/;"	f	file:
+bounce	chipmunk/cpArbiter.h	/^	cpFloat nMass, tMass, bounce;$/;"	m	struct:cpContact
+c	chipmunk/cpShape.h	/^	cpVect c;$/;"	m	struct:cpCircleShape
+cacheData	chipmunk/cpShape.h	/^	cpBB (*cacheData)(struct cpShape *shape, cpVect p, cpVect rot);$/;"	m	struct:cpShape
+celldim	chipmunk/cpSpaceHash.h	/^	cpFloat celldim;$/;"	m	struct:cpSpaceHash
+circle2circle	chipmunk/cpCollision.c	/^circle2circle(cpShape *shape1, cpShape *shape2, cpContact **arr)$/;"	f	file:
+circle2circleQuery	chipmunk/cpCollision.c	/^circle2circleQuery(cpVect p1, cpVect p2, cpFloat r1, cpFloat r2, cpContact **con)$/;"	f	file:
+circle2poly	chipmunk/cpCollision.c	/^circle2poly(cpShape *shape1, cpShape *shape2, cpContact **con)$/;"	f	file:
+circle2segment	chipmunk/cpCollision.c	/^circle2segment(cpShape *circleShape, cpShape *segmentShape, cpContact **con)$/;"	f	file:
+clamp	chipmunk/cpJoint.h	/^	cpFloat clamp;$/;"	m	struct:cpGrooveJoint
+clearHash	chipmunk/cpSpaceHash.c	/^clearHash(cpSpaceHash *hash)$/;"	f	file:
+clearHashCell	chipmunk/cpSpaceHash.c	/^clearHashCell(cpSpaceHash *hash, int index)$/;"	f	file:
+colfuncs	chipmunk/cpCollision.c	/^static collisionFunc *colfuncs = NULL;$/;"	v	file:
+collFuncData	chipmunk/cpSpace.c	/^typedef struct collFuncData {$/;"	s	file:
+collFuncData	chipmunk/cpSpace.c	/^} collFuncData;$/;"	t	typeref:struct:collFuncData	file:
+collFuncSet	chipmunk/cpSpace.h	/^	cpHashSet *collFuncSet;$/;"	m	struct:cpSpace
+collFuncSetEql	chipmunk/cpSpace.c	/^collFuncSetEql(void *ptr, void *elt)$/;"	f	file:
+collFuncSetTrans	chipmunk/cpSpace.c	/^collFuncSetTrans(void *ptr, void *data)$/;"	f	file:
+collisionFunc	chipmunk/cpCollision.c	/^typedef int (*collisionFunc)(cpShape*, cpShape*, cpContact**);$/;"	t	file:
+collision_type	chipmunk/cpShape.h	/^	unsigned int collision_type;$/;"	m	struct:cpShape
+contactSet	chipmunk/cpSpace.h	/^	cpHashSet *contactSet;$/;"	m	struct:cpSpace
+contactSetEql	chipmunk/cpSpace.c	/^contactSetEql(void *ptr, void *elt)$/;"	f	file:
+contactSetReject	chipmunk/cpSpace.c	/^contactSetReject(void *ptr, void *data)$/;"	f	file:
+contactSetTrans	chipmunk/cpSpace.c	/^contactSetTrans(void *ptr, void *data)$/;"	f	file:
+contacts	chipmunk/cpArbiter.h	/^	cpContact *contacts;$/;"	m	struct:cpArbiter
+containsHandle	chipmunk/cpSpaceHash.c	/^containsHandle(cpSpaceHashBin *bin, cpHandle *hand)$/;"	f	file:
+cpArbiter	chipmunk/cpArbiter.h	/^typedef struct cpArbiter{$/;"	s
+cpArbiter	chipmunk/cpArbiter.h	/^} cpArbiter;$/;"	t	typeref:struct:cpArbiter
+cpArbiterAlloc	chipmunk/cpArbiter.c	/^cpArbiterAlloc(void)$/;"	f
+cpArbiterApplyImpulse	chipmunk/cpArbiter.c	/^cpArbiterApplyImpulse(cpArbiter *arb)$/;"	f
+cpArbiterDestroy	chipmunk/cpArbiter.c	/^cpArbiterDestroy(cpArbiter *arb)$/;"	f
+cpArbiterFree	chipmunk/cpArbiter.c	/^cpArbiterFree(cpArbiter *arb)$/;"	f
+cpArbiterInit	chipmunk/cpArbiter.c	/^cpArbiterInit(cpArbiter *arb, cpShape *a, cpShape *b, int stamp)$/;"	f
+cpArbiterInject	chipmunk/cpArbiter.c	/^cpArbiterInject(cpArbiter *arb, cpContact *contacts, int numContacts)$/;"	f
+cpArbiterNew	chipmunk/cpArbiter.c	/^cpArbiterNew(cpShape *a, cpShape *b, int stamp)$/;"	f
+cpArbiterPreStep	chipmunk/cpArbiter.c	/^cpArbiterPreStep(cpArbiter *arb, cpFloat dt_inv)$/;"	f
+cpArray	chipmunk/cpArray.h	/^typedef struct cpArray{$/;"	s
+cpArray	chipmunk/cpArray.h	/^} cpArray;$/;"	t	typeref:struct:cpArray
+cpArrayAlloc	chipmunk/cpArray.c	/^cpArrayAlloc(void)$/;"	f
+cpArrayContains	chipmunk/cpArray.c	/^cpArrayContains(cpArray *arr, void *ptr)$/;"	f
+cpArrayDeleteIndex	chipmunk/cpArray.c	/^cpArrayDeleteIndex(cpArray *arr, int index)$/;"	f
+cpArrayDeleteObj	chipmunk/cpArray.c	/^cpArrayDeleteObj(cpArray *arr, void *obj)$/;"	f
+cpArrayDestroy	chipmunk/cpArray.c	/^cpArrayDestroy(cpArray *arr)$/;"	f
+cpArrayEach	chipmunk/cpArray.c	/^cpArrayEach(cpArray *arr, cpArrayIter iterFunc, void *data)$/;"	f
+cpArrayFree	chipmunk/cpArray.c	/^cpArrayFree(cpArray *arr)$/;"	f
+cpArrayInit	chipmunk/cpArray.c	/^cpArrayInit(cpArray *arr, int size)$/;"	f
+cpArrayIter	chipmunk/cpArray.h	/^typedef void (*cpArrayIter)(void *ptr, void *data);$/;"	t
+cpArrayNew	chipmunk/cpArray.c	/^cpArrayNew(int size)$/;"	f
+cpArrayPush	chipmunk/cpArray.c	/^cpArrayPush(cpArray *arr, void *object)$/;"	f
+cpBB	chipmunk/cpBB.h	/^typedef struct cpBB{$/;"	s
+cpBB	chipmunk/cpBB.h	/^} cpBB;$/;"	t	typeref:struct:cpBB
+cpBBClampVect	chipmunk/cpBB.c	/^cpBBClampVect(const cpBB bb, const cpVect v)$/;"	f
+cpBBNew	chipmunk/cpBB.h	/^cpBBNew(const cpFloat l, const cpFloat b,$/;"	f
+cpBBWrapVect	chipmunk/cpBB.c	/^cpBBWrapVect(const cpBB bb, const cpVect v)$/;"	f
+cpBBcontainsBB	chipmunk/cpBB.h	/^cpBBcontainsBB(const cpBB bb, const cpBB other)$/;"	f
+cpBBcontainsVect	chipmunk/cpBB.h	/^cpBBcontainsVect(const cpBB bb, const cpVect v)$/;"	f
+cpBBintersects	chipmunk/cpBB.h	/^cpBBintersects(const cpBB a, const cpBB b)$/;"	f
+cpBody	chipmunk/cpBody.h	/^typedef struct cpBody{$/;"	s
+cpBody	chipmunk/cpBody.h	/^} cpBody;$/;"	t	typeref:struct:cpBody
+cpBodyAlloc	chipmunk/cpBody.c	/^cpBodyAlloc(void)$/;"	f
+cpBodyApplyBiasImpulse	chipmunk/cpBody.h	/^cpBodyApplyBiasImpulse(cpBody *body, cpVect j, cpVect r)$/;"	f
+cpBodyApplyForce	chipmunk/cpBody.c	/^cpBodyApplyForce(cpBody *body, cpVect f, cpVect r)$/;"	f
+cpBodyApplyImpulse	chipmunk/cpBody.h	/^cpBodyApplyImpulse(cpBody *body, cpVect j, cpVect r)$/;"	f
+cpBodyDestroy	chipmunk/cpBody.c	/^void cpBodyDestroy(cpBody *body){}$/;"	f
+cpBodyFree	chipmunk/cpBody.c	/^cpBodyFree(cpBody *body)$/;"	f
+cpBodyInit	chipmunk/cpBody.c	/^cpBodyInit(cpBody *body, cpFloat m, cpFloat i)$/;"	f
+cpBodyLocal2World	chipmunk/cpBody.h	/^cpBodyLocal2World(cpBody *body, cpVect v)$/;"	f
+cpBodyNew	chipmunk/cpBody.c	/^cpBodyNew(cpFloat m, cpFloat i)$/;"	f
+cpBodyResetForces	chipmunk/cpBody.c	/^cpBodyResetForces(cpBody *body)$/;"	f
+cpBodySetAngle	chipmunk/cpBody.c	/^cpBodySetAngle(cpBody *body, cpFloat a)$/;"	f
+cpBodySetMass	chipmunk/cpBody.c	/^cpBodySetMass(cpBody *body, cpFloat m)$/;"	f
+cpBodySetMoment	chipmunk/cpBody.c	/^cpBodySetMoment(cpBody *body, cpFloat i)$/;"	f
+cpBodySlew	chipmunk/cpBody.c	/^cpBodySlew(cpBody *body, cpVect pos, cpFloat dt)$/;"	f
+cpBodyUpdatePosition	chipmunk/cpBody.c	/^cpBodyUpdatePosition(cpBody *body, cpFloat dt)$/;"	f
+cpBodyUpdateVelocity	chipmunk/cpBody.c	/^cpBodyUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)$/;"	f
+cpBodyWorld2Local	chipmunk/cpBody.h	/^cpBodyWorld2Local(cpBody *body, cpVect v)$/;"	f
+cpCircleShape	chipmunk/cpShape.h	/^typedef struct cpCircleShape{$/;"	s
+cpCircleShape	chipmunk/cpShape.h	/^} cpCircleShape;$/;"	t	typeref:struct:cpCircleShape
+cpCircleShapeAlloc	chipmunk/cpShape.c	/^cpCircleShapeAlloc(void)$/;"	f
+cpCircleShapeCacheData	chipmunk/cpShape.c	/^cpCircleShapeCacheData(cpShape *shape, cpVect p, cpVect rot)$/;"	f	file:
+cpCircleShapeInit	chipmunk/cpShape.c	/^cpCircleShapeInit(cpCircleShape *circle, cpBody *body, cpFloat radius, cpVect offset)$/;"	f
+cpCircleShapeNew	chipmunk/cpShape.c	/^cpCircleShapeNew(cpBody *body, cpFloat radius, cpVect offset)$/;"	f
+cpCollFunc	chipmunk/cpSpace.h	/^typedef int (*cpCollFunc)(cpShape *a, cpShape *b, cpContact *contacts, int numContacts, cpFloat normal_coef, void *data);$/;"	t
+cpCollPairFunc	chipmunk/cpSpace.h	/^typedef struct cpCollPairFunc {$/;"	s
+cpCollPairFunc	chipmunk/cpSpace.h	/^} cpCollPairFunc;$/;"	t	typeref:struct:cpCollPairFunc
+cpCollideShapes	chipmunk/cpCollision.c	/^cpCollideShapes(cpShape *a, cpShape *b, cpContact **arr)$/;"	f
+cpContact	chipmunk/cpArbiter.h	/^typedef struct cpContact{$/;"	s
+cpContact	chipmunk/cpArbiter.h	/^} cpContact;$/;"	t	typeref:struct:cpContact
+cpContactInit	chipmunk/cpArbiter.c	/^cpContactInit(cpContact *con, cpVect p, cpVect n, cpFloat dist, unsigned int hash)$/;"	f
+cpContactsSumImpulses	chipmunk/cpArbiter.c	/^cpContactsSumImpulses(cpContact *contacts, int numContacts)$/;"	f
+cpContactsSumImpulsesWithFriction	chipmunk/cpArbiter.c	/^cpContactsSumImpulsesWithFriction(cpContact *contacts, int numContacts)$/;"	f
+cpDampedSpring	chipmunk/cpBody.c	/^cpDampedSpring(cpBody *a, cpBody *b, cpVect anchr1, cpVect anchr2, cpFloat rlen, cpFloat k, cpFloat dmp, cpFloat dt)$/;"	f
+cpFloat	chipmunk/chipmunk.h	/^typedef float cpFloat;$/;"	t
+cpGrooveJoint	chipmunk/cpJoint.h	/^typedef struct cpGrooveJoint {$/;"	s
+cpGrooveJoint	chipmunk/cpJoint.h	/^} cpGrooveJoint;$/;"	t	typeref:struct:cpGrooveJoint
+cpGrooveJointAlloc	chipmunk/cpJoint.c	/^cpGrooveJointAlloc(void)$/;"	f
+cpGrooveJointInit	chipmunk/cpJoint.c	/^cpGrooveJointInit(cpGrooveJoint *joint, cpBody *a, cpBody *b, cpVect groove_a, cpVect groove_b, cpVect anchr2)$/;"	f
+cpGrooveJointNew	chipmunk/cpJoint.c	/^cpGrooveJointNew(cpBody *a, cpBody *b, cpVect groove_a, cpVect groove_b, cpVect anchr2)$/;"	f
+cpHandle	chipmunk/cpSpaceHash.h	/^typedef struct cpHandle{$/;"	s
+cpHandle	chipmunk/cpSpaceHash.h	/^} cpHandle;$/;"	t	typeref:struct:cpHandle
+cpHandleAlloc	chipmunk/cpSpaceHash.c	/^cpHandleAlloc(void)$/;"	f	file:
+cpHandleFree	chipmunk/cpSpaceHash.c	/^cpHandleFree(cpHandle *hand)$/;"	f	file:
+cpHandleInit	chipmunk/cpSpaceHash.c	/^cpHandleInit(cpHandle *hand, void *obj)$/;"	f	file:
+cpHandleNew	chipmunk/cpSpaceHash.c	/^cpHandleNew(void *obj)$/;"	f	file:
+cpHandleRelease	chipmunk/cpSpaceHash.c	/^cpHandleRelease(cpHandle *hand)$/;"	f	file:
+cpHandleRetain	chipmunk/cpSpaceHash.c	/^cpHandleRetain(cpHandle *hand)$/;"	f	file:
+cpHashSet	chipmunk/cpHashSet.h	/^typedef struct cpHashSet {$/;"	s
+cpHashSet	chipmunk/cpHashSet.h	/^} cpHashSet;$/;"	t	typeref:struct:cpHashSet
+cpHashSetAlloc	chipmunk/cpHashSet.c	/^cpHashSetAlloc(void)$/;"	f
+cpHashSetBin	chipmunk/cpHashSet.h	/^typedef struct cpHashSetBin {$/;"	s
+cpHashSetBin	chipmunk/cpHashSet.h	/^} cpHashSetBin;$/;"	t	typeref:struct:cpHashSetBin
+cpHashSetDestroy	chipmunk/cpHashSet.c	/^cpHashSetDestroy(cpHashSet *set)$/;"	f
+cpHashSetEach	chipmunk/cpHashSet.c	/^cpHashSetEach(cpHashSet *set, cpHashSetIterFunc func, void *data)$/;"	f
+cpHashSetEqlFunc	chipmunk/cpHashSet.h	/^typedef int (*cpHashSetEqlFunc)(void *ptr, void *elt);$/;"	t
+cpHashSetFind	chipmunk/cpHashSet.c	/^cpHashSetFind(cpHashSet *set, unsigned int hash, void *ptr)$/;"	f
+cpHashSetFree	chipmunk/cpHashSet.c	/^cpHashSetFree(cpHashSet *set)$/;"	f
+cpHashSetInit	chipmunk/cpHashSet.c	/^cpHashSetInit(cpHashSet *set, int size, cpHashSetEqlFunc eqlFunc, cpHashSetTransFunc trans)$/;"	f
+cpHashSetInsert	chipmunk/cpHashSet.c	/^cpHashSetInsert(cpHashSet *set, unsigned int hash, void *ptr, void *data)$/;"	f
+cpHashSetIterFunc	chipmunk/cpHashSet.h	/^typedef void (*cpHashSetIterFunc)(void *elt, void *data);$/;"	t
+cpHashSetNew	chipmunk/cpHashSet.c	/^cpHashSetNew(int size, cpHashSetEqlFunc eqlFunc, cpHashSetTransFunc trans)$/;"	f
+cpHashSetReject	chipmunk/cpHashSet.c	/^cpHashSetReject(cpHashSet *set, cpHashSetRejectFunc func, void *data)$/;"	f
+cpHashSetRejectFunc	chipmunk/cpHashSet.h	/^typedef int (*cpHashSetRejectFunc)(void *elt, void *data);$/;"	t
+cpHashSetRemove	chipmunk/cpHashSet.c	/^cpHashSetRemove(cpHashSet *set, unsigned int hash, void *ptr)$/;"	f
+cpHashSetResize	chipmunk/cpHashSet.c	/^cpHashSetResize(cpHashSet *set)$/;"	f	file:
+cpHashSetTransFunc	chipmunk/cpHashSet.h	/^typedef void *(*cpHashSetTransFunc)(void *ptr, void *data);$/;"	t
+cpInitChipmunk	chipmunk/chipmunk.c	/^cpInitChipmunk(void)$/;"	f
+cpInitCollisionFuncs	chipmunk/cpCollision.c	/^	cpInitCollisionFuncs(void)$/;"	f
+cpJoint	chipmunk/cpJoint.h	/^typedef struct cpJoint {$/;"	s
+cpJoint	chipmunk/cpJoint.h	/^} cpJoint;$/;"	t	typeref:struct:cpJoint
+cpJointDestroy	chipmunk/cpJoint.c	/^void cpJointDestroy(cpJoint *joint){}$/;"	f
+cpJointFree	chipmunk/cpJoint.c	/^cpJointFree(cpJoint *joint)$/;"	f
+cpMomentForCircle	chipmunk/chipmunk.c	/^cpMomentForCircle(cpFloat m, cpFloat r1, cpFloat r2, cpVect offset)$/;"	f
+cpMomentForPoly	chipmunk/chipmunk.c	/^cpMomentForPoly(cpFloat m, const int numVerts, cpVect *verts, cpVect offset)$/;"	f
+cpPinJoint	chipmunk/cpJoint.h	/^typedef struct cpPinJoint {$/;"	s
+cpPinJoint	chipmunk/cpJoint.h	/^} cpPinJoint;$/;"	t	typeref:struct:cpPinJoint
+cpPinJointAlloc	chipmunk/cpJoint.c	/^cpPinJointAlloc(void)$/;"	f
+cpPinJointInit	chipmunk/cpJoint.c	/^cpPinJointInit(cpPinJoint *joint, cpBody *a, cpBody *b, cpVect anchr1, cpVect anchr2)$/;"	f
+cpPinJointNew	chipmunk/cpJoint.c	/^cpPinJointNew(cpBody *a, cpBody *b, cpVect anchr1, cpVect anchr2)$/;"	f
+cpPivotJoint	chipmunk/cpJoint.h	/^typedef struct cpPivotJoint {$/;"	s
+cpPivotJoint	chipmunk/cpJoint.h	/^} cpPivotJoint;$/;"	t	typeref:struct:cpPivotJoint
+cpPivotJointAlloc	chipmunk/cpJoint.c	/^cpPivotJointAlloc(void)$/;"	f
+cpPivotJointInit	chipmunk/cpJoint.c	/^cpPivotJointInit(cpPivotJoint *joint, cpBody *a, cpBody *b, cpVect pivot)$/;"	f
+cpPivotJointNew	chipmunk/cpJoint.c	/^cpPivotJointNew(cpBody *a, cpBody *b, cpVect pivot)$/;"	f
+cpPolyShape	chipmunk/cpPolyShape.h	/^typedef struct cpPolyShape{$/;"	s
+cpPolyShape	chipmunk/cpPolyShape.h	/^} cpPolyShape;$/;"	t	typeref:struct:cpPolyShape
+cpPolyShapeAlloc	chipmunk/cpPolyShape.c	/^cpPolyShapeAlloc(void)$/;"	f
+cpPolyShapeAxis	chipmunk/cpPolyShape.h	/^typedef struct cpPolyShapeAxis{$/;"	s
+cpPolyShapeAxis	chipmunk/cpPolyShape.h	/^} cpPolyShapeAxis;$/;"	t	typeref:struct:cpPolyShapeAxis
+cpPolyShapeCacheData	chipmunk/cpPolyShape.c	/^cpPolyShapeCacheData(cpShape *shape, cpVect p, cpVect rot)$/;"	f	file:
+cpPolyShapeContainsVert	chipmunk/cpPolyShape.h	/^cpPolyShapeContainsVert(cpPolyShape *poly, cpVect v)$/;"	f
+cpPolyShapeDestroy	chipmunk/cpPolyShape.c	/^cpPolyShapeDestroy(cpShape *shape)$/;"	f	file:
+cpPolyShapeInit	chipmunk/cpPolyShape.c	/^cpPolyShapeInit(cpPolyShape *poly, cpBody *body, int numVerts, cpVect *verts, cpVect offset)$/;"	f
+cpPolyShapeNew	chipmunk/cpPolyShape.c	/^cpPolyShapeNew(cpBody *body, int numVerts, cpVect *verts, cpVect offset)$/;"	f
+cpPolyShapeTransformAxes	chipmunk/cpPolyShape.c	/^cpPolyShapeTransformAxes(cpPolyShape *poly, cpVect p, cpVect rot)$/;"	f	file:
+cpPolyShapeTransformVerts	chipmunk/cpPolyShape.c	/^cpPolyShapeTransformVerts(cpPolyShape *poly, cpVect p, cpVect rot)$/;"	f	file:
+cpPolyShapeValueOnAxis	chipmunk/cpPolyShape.h	/^cpPolyShapeValueOnAxis(const cpPolyShape *poly, const cpVect n, const cpFloat d)$/;"	f
+cpResetShapeIdCounter	chipmunk/cpShape.c	/^cpResetShapeIdCounter(void)$/;"	f
+cpSegmentShape	chipmunk/cpShape.h	/^typedef struct cpSegmentShape{$/;"	s
+cpSegmentShape	chipmunk/cpShape.h	/^} cpSegmentShape;$/;"	t	typeref:struct:cpSegmentShape
+cpSegmentShapeAlloc	chipmunk/cpShape.c	/^cpSegmentShapeAlloc(void)$/;"	f
+cpSegmentShapeCacheData	chipmunk/cpShape.c	/^cpSegmentShapeCacheData(cpShape *shape, cpVect p, cpVect rot)$/;"	f	file:
+cpSegmentShapeInit	chipmunk/cpShape.c	/^cpSegmentShapeInit(cpSegmentShape *seg, cpBody *body, cpVect a, cpVect b, cpFloat r)$/;"	f
+cpSegmentShapeNew	chipmunk/cpShape.c	/^cpSegmentShapeNew(cpBody *body, cpVect a, cpVect b, cpFloat r)$/;"	f
+cpShape	chipmunk/cpShape.h	/^typedef struct cpShape{$/;"	s
+cpShape	chipmunk/cpShape.h	/^} cpShape;$/;"	t	typeref:struct:cpShape
+cpShapeCacheBB	chipmunk/cpShape.c	/^cpShapeCacheBB(cpShape *shape)$/;"	f
+cpShapeDestroy	chipmunk/cpShape.c	/^cpShapeDestroy(cpShape *shape)$/;"	f
+cpShapeFree	chipmunk/cpShape.c	/^cpShapeFree(cpShape *shape)$/;"	f
+cpShapeInit	chipmunk/cpShape.c	/^cpShapeInit(cpShape *shape, cpShapeType type, cpBody *body)$/;"	f
+cpShapeType	chipmunk/cpShape.h	/^typedef enum cpShapeType{$/;"	g
+cpShapeType	chipmunk/cpShape.h	/^} cpShapeType;$/;"	t	typeref:enum:cpShapeType
+cpSlideJoint	chipmunk/cpJoint.h	/^typedef struct cpSlideJoint {$/;"	s
+cpSlideJoint	chipmunk/cpJoint.h	/^} cpSlideJoint;$/;"	t	typeref:struct:cpSlideJoint
+cpSlideJointAlloc	chipmunk/cpJoint.c	/^cpSlideJointAlloc(void)$/;"	f
+cpSlideJointInit	chipmunk/cpJoint.c	/^cpSlideJointInit(cpSlideJoint *joint, cpBody *a, cpBody *b, cpVect anchr1, cpVect anchr2, cpFloat min, cpFloat max)$/;"	f
+cpSlideJointNew	chipmunk/cpJoint.c	/^cpSlideJointNew(cpBody *a, cpBody *b, cpVect anchr1, cpVect anchr2, cpFloat min, cpFloat max)$/;"	f
+cpSpace	chipmunk/cpSpace.h	/^typedef struct cpSpace{$/;"	s
+cpSpace	chipmunk/cpSpace.h	/^} cpSpace;$/;"	t	typeref:struct:cpSpace
+cpSpaceAddBody	chipmunk/cpSpace.c	/^cpSpaceAddBody(cpSpace *space, cpBody *body)$/;"	f
+cpSpaceAddCollisionPairFunc	chipmunk/cpSpace.c	/^cpSpaceAddCollisionPairFunc(cpSpace *space, unsigned int a, unsigned int b,$/;"	f
+cpSpaceAddJoint	chipmunk/cpSpace.c	/^cpSpaceAddJoint(cpSpace *space, cpJoint *joint)$/;"	f
+cpSpaceAddShape	chipmunk/cpSpace.c	/^cpSpaceAddShape(cpSpace *space, cpShape *shape)$/;"	f
+cpSpaceAddStaticShape	chipmunk/cpSpace.c	/^cpSpaceAddStaticShape(cpSpace *space, cpShape *shape)$/;"	f
+cpSpaceAlloc	chipmunk/cpSpace.c	/^cpSpaceAlloc(void)$/;"	f
+cpSpaceBodyIterator	chipmunk/cpSpace.h	/^typedef void (*cpSpaceBodyIterator)(cpBody *body, void *data);$/;"	t
+cpSpaceDestroy	chipmunk/cpSpace.c	/^cpSpaceDestroy(cpSpace *space)$/;"	f
+cpSpaceEachBody	chipmunk/cpSpace.c	/^cpSpaceEachBody(cpSpace *space, cpSpaceBodyIterator func, void *data)$/;"	f
+cpSpaceFree	chipmunk/cpSpace.c	/^cpSpaceFree(cpSpace *space)$/;"	f
+cpSpaceFreeChildren	chipmunk/cpSpace.c	/^cpSpaceFreeChildren(cpSpace *space)$/;"	f
+cpSpaceHash	chipmunk/cpSpaceHash.h	/^typedef struct cpSpaceHash{$/;"	s
+cpSpaceHash	chipmunk/cpSpaceHash.h	/^} cpSpaceHash;$/;"	t	typeref:struct:cpSpaceHash
+cpSpaceHashAlloc	chipmunk/cpSpaceHash.c	/^cpSpaceHashAlloc(void)$/;"	f
+cpSpaceHashAllocTable	chipmunk/cpSpaceHash.c	/^cpSpaceHashAllocTable(cpSpaceHash *hash, int numcells)$/;"	f	file:
+cpSpaceHashBBFunc	chipmunk/cpSpaceHash.h	/^typedef cpBB (*cpSpaceHashBBFunc)(void *obj);$/;"	t
+cpSpaceHashBin	chipmunk/cpSpaceHash.h	/^typedef struct cpSpaceHashBin{$/;"	s
+cpSpaceHashBin	chipmunk/cpSpaceHash.h	/^} cpSpaceHashBin;$/;"	t	typeref:struct:cpSpaceHashBin
+cpSpaceHashDestroy	chipmunk/cpSpaceHash.c	/^cpSpaceHashDestroy(cpSpaceHash *hash)$/;"	f
+cpSpaceHashEach	chipmunk/cpSpaceHash.c	/^cpSpaceHashEach(cpSpaceHash *hash, cpSpaceHashIterator func, void *data)$/;"	f
+cpSpaceHashFree	chipmunk/cpSpaceHash.c	/^cpSpaceHashFree(cpSpaceHash *hash)$/;"	f
+cpSpaceHashInit	chipmunk/cpSpaceHash.c	/^cpSpaceHashInit(cpSpaceHash *hash, cpFloat celldim, int numcells, cpSpaceHashBBFunc bbfunc)$/;"	f
+cpSpaceHashInsert	chipmunk/cpSpaceHash.c	/^cpSpaceHashInsert(cpSpaceHash *hash, void *obj, unsigned int id, cpBB bb)$/;"	f
+cpSpaceHashIterator	chipmunk/cpSpaceHash.h	/^typedef void (*cpSpaceHashIterator)(void *obj, void *data);$/;"	t
+cpSpaceHashNew	chipmunk/cpSpaceHash.c	/^cpSpaceHashNew(cpFloat celldim, int cells, cpSpaceHashBBFunc bbfunc)$/;"	f
+cpSpaceHashQuery	chipmunk/cpSpaceHash.c	/^cpSpaceHashQuery(cpSpaceHash *hash, void *obj, cpBB bb, cpSpaceHashQueryFunc func, void *data)$/;"	f
+cpSpaceHashQueryFunc	chipmunk/cpSpaceHash.h	/^typedef int (*cpSpaceHashQueryFunc)(void *obj1, void *obj2, void *data);$/;"	t
+cpSpaceHashQueryRehash	chipmunk/cpSpaceHash.c	/^cpSpaceHashQueryRehash(cpSpaceHash *hash, cpSpaceHashQueryFunc func, void *data)$/;"	f
+cpSpaceHashRehash	chipmunk/cpSpaceHash.c	/^cpSpaceHashRehash(cpSpaceHash *hash)$/;"	f
+cpSpaceHashRehashObject	chipmunk/cpSpaceHash.c	/^cpSpaceHashRehashObject(cpSpaceHash *hash, void *obj, unsigned int id)$/;"	f
+cpSpaceHashRemove	chipmunk/cpSpaceHash.c	/^cpSpaceHashRemove(cpSpaceHash *hash, void *obj, unsigned int id)$/;"	f
+cpSpaceHashResize	chipmunk/cpSpaceHash.c	/^cpSpaceHashResize(cpSpaceHash *hash, cpFloat celldim, int numcells)$/;"	f
+cpSpaceInit	chipmunk/cpSpace.c	/^cpSpaceInit(cpSpace *space)$/;"	f
+cpSpaceNew	chipmunk/cpSpace.c	/^cpSpaceNew(void)$/;"	f
+cpSpaceRehashStatic	chipmunk/cpSpace.c	/^cpSpaceRehashStatic(cpSpace *space)$/;"	f
+cpSpaceRemoveBody	chipmunk/cpSpace.c	/^cpSpaceRemoveBody(cpSpace *space, cpBody *body)$/;"	f
+cpSpaceRemoveCollisionPairFunc	chipmunk/cpSpace.c	/^cpSpaceRemoveCollisionPairFunc(cpSpace *space, unsigned int a, unsigned int b)$/;"	f
+cpSpaceRemoveJoint	chipmunk/cpSpace.c	/^cpSpaceRemoveJoint(cpSpace *space, cpJoint *joint)$/;"	f
+cpSpaceRemoveShape	chipmunk/cpSpace.c	/^cpSpaceRemoveShape(cpSpace *space, cpShape *shape)$/;"	f
+cpSpaceRemoveStaticShape	chipmunk/cpSpace.c	/^cpSpaceRemoveStaticShape(cpSpace *space, cpShape *shape)$/;"	f
+cpSpaceResizeActiveHash	chipmunk/cpSpace.c	/^cpSpaceResizeActiveHash(cpSpace *space, cpFloat dim, int count)$/;"	f
+cpSpaceResizeStaticHash	chipmunk/cpSpace.c	/^cpSpaceResizeStaticHash(cpSpace *space, cpFloat dim, int count)$/;"	f
+cpSpaceSetDefaultCollisionPairFunc	chipmunk/cpSpace.c	/^cpSpaceSetDefaultCollisionPairFunc(cpSpace *space, cpCollFunc func, void *data)$/;"	f
+cpSpaceStep	chipmunk/cpSpace.c	/^cpSpaceStep(cpSpace *space, cpFloat dt)$/;"	f
+cpVect	chipmunk/cpVect.h	/^typedef struct cpVect{$/;"	s
+cpVect	chipmunk/cpVect.h	/^} cpVect;$/;"	t	typeref:struct:cpVect
+cp_bias_coef	chipmunk/cpArbiter.c	/^cpFloat cp_bias_coef = 0.1f;$/;"	v
+cp_collision_slop	chipmunk/cpArbiter.c	/^cpFloat cp_collision_slop = 0.1f;$/;"	v
+cp_contact_persistence	chipmunk/cpSpace.c	/^int cp_contact_persistence = 3;$/;"	v
+cp_joint_bias_coef	chipmunk/cpJoint.c	/^cpFloat cp_joint_bias_coef = 0.1f;$/;"	v
+cpfmax	chipmunk/chipmunk.h	/^cpfmax(cpFloat a, cpFloat b)$/;"	f
+cpfmin	chipmunk/chipmunk.h	/^cpfmin(cpFloat a, cpFloat b)$/;"	f
+cpv	chipmunk/cpVect.h	/^cpv(const cpFloat x, const cpFloat y)$/;"	f
+cpvadd	chipmunk/cpVect.h	/^cpvadd(const cpVect v1, const cpVect v2)$/;"	f
+cpvcross	chipmunk/cpVect.h	/^cpvcross(const cpVect v1, const cpVect v2)$/;"	f
+cpvdot	chipmunk/cpVect.h	/^cpvdot(const cpVect v1, const cpVect v2)$/;"	f
+cpvforangle	chipmunk/cpVect.c	/^cpvforangle(const cpFloat a)$/;"	f
+cpvlength	chipmunk/cpVect.c	/^cpvlength(const cpVect v)$/;"	f
+cpvlengthsq	chipmunk/cpVect.c	/^cpvlengthsq(const cpVect v)$/;"	f
+cpvmult	chipmunk/cpVect.h	/^cpvmult(const cpVect v, const cpFloat s)$/;"	f
+cpvneg	chipmunk/cpVect.h	/^cpvneg(const cpVect v)$/;"	f
+cpvnormalize	chipmunk/cpVect.c	/^cpvnormalize(const cpVect v)$/;"	f
+cpvperp	chipmunk/cpVect.h	/^cpvperp(const cpVect v)$/;"	f
+cpvproject	chipmunk/cpVect.h	/^cpvproject(const cpVect v1, const cpVect v2)$/;"	f
+cpvrotate	chipmunk/cpVect.h	/^cpvrotate(const cpVect v1, const cpVect v2)$/;"	f
+cpvrperp	chipmunk/cpVect.h	/^cpvrperp(const cpVect v)$/;"	f
+cpvstr	chipmunk/cpVect.c	/^cpvstr(const cpVect v)$/;"	f
+cpvsub	chipmunk/cpVect.h	/^cpvsub(const cpVect v1, const cpVect v2)$/;"	f
+cpvtoangle	chipmunk/cpVect.c	/^cpvtoangle(const cpVect v)$/;"	f
+cpvunrotate	chipmunk/cpVect.h	/^cpvunrotate(const cpVect v1, const cpVect v2)$/;"	f
+cpvzero	chipmunk/cpVect.h	/^static const cpVect cpvzero={0.0f,0.0f};$/;"	v
+d	chipmunk/cpPolyShape.h	/^	cpFloat d;$/;"	m	struct:cpPolyShapeAxis
+damping	chipmunk/cpSpace.h	/^	cpFloat damping;$/;"	m	struct:cpSpace
+data	chipmunk/cpShape.h	/^	void *data;$/;"	m	struct:cpShape
+data	chipmunk/cpSpace.c	/^	void *data;$/;"	m	struct:collFuncData	file:
+data	chipmunk/cpSpace.h	/^	void *data;$/;"	m	struct:cpCollPairFunc
+data	chipmunk/cpSpaceHash.c	/^	void *data;$/;"	m	struct:eachPair	file:
+data	chipmunk/cpSpaceHash.c	/^	void *data;$/;"	m	struct:queryRehashPair	file:
+defaultPairFunc	chipmunk/cpSpace.h	/^	cpCollPairFunc defaultPairFunc;$/;"	m	struct:cpSpace
+default_value	chipmunk/cpHashSet.h	/^	void *default_value;$/;"	m	struct:cpHashSet
+deinit	Chipmunk-Demo-5.c	/^static void deinit(void) {$/;"	f	file:
+demo5_init	chipmunk/Demo5.c	/^void demo5_init(void)$/;"	f
+demo5_update	chipmunk/Demo5.c	/^void demo5_update(void)$/;"	f
+destroy	chipmunk/cpShape.h	/^	void (*destroy)(struct cpShape *shape);$/;"	m	struct:cpShape
+dist	chipmunk/cpArbiter.h	/^	cpFloat dist;$/;"	m	struct:cpContact
+dist	chipmunk/cpJoint.h	/^	cpFloat dist;$/;"	m	struct:cpPinJoint
+drawCircleShape	Chipmunk-Demo-5.c	/^void drawCircleShape(GContext *ctx, cpCircleShape *circle) {$/;"	f
+drawObject	Chipmunk-Demo-5.c	/^void drawObject(GContext *ctx, cpShape *shape) {$/;"	f
+e	chipmunk/cpArbiter.h	/^	cpFloat u, e;$/;"	m	struct:cpArbiter
+e	chipmunk/cpShape.h	/^	cpFloat e;$/;"	m	struct:cpShape
+eachHelper	chipmunk/cpSpaceHash.c	/^eachHelper(void *elt, void *data)$/;"	f	file:
+eachPair	chipmunk/cpSpaceHash.c	/^typedef struct eachPair {$/;"	s	file:
+eachPair	chipmunk/cpSpaceHash.c	/^} eachPair;$/;"	t	typeref:struct:eachPair	file:
+elt	chipmunk/cpHashSet.h	/^	void *elt;$/;"	m	struct:cpHashSetBin
+entries	chipmunk/cpHashSet.h	/^	int entries;$/;"	m	struct:cpHashSet
+eql	chipmunk/cpHashSet.h	/^	cpHashSetEqlFunc eql;$/;"	m	struct:cpHashSet
+f	chipmunk/cpBody.h	/^	cpVect p, v, f, v_bias;$/;"	m	struct:cpBody
+findMSA	chipmunk/cpCollision.c	/^findMSA(cpPolyShape *poly, cpPolyShapeAxis *axes, int num, cpFloat *min_out)$/;"	f	file:
+findPointsBehindSeg	chipmunk/cpCollision.c	/^findPointsBehindSeg(cpContact **arr, int *max, int *num, cpSegmentShape *seg, cpPolyShape *poly, cpFloat pDist, cpFloat coef) $/;"	f	file:
+findVerts	chipmunk/cpCollision.c	/^findVerts(cpContact **arr, cpPolyShape *poly1, cpPolyShape *poly2, cpVect n, cpFloat dist)$/;"	f	file:
+freeBins	chipmunk/cpSpaceHash.c	/^freeBins(cpSpaceHash *hash)$/;"	f	file:
+freeWrap	chipmunk/cpSpace.c	/^static void        freeWrap(void *ptr, void *unused){          free(             ptr);}$/;"	f	file:
+func	chipmunk/cpSpace.c	/^	cpCollFunc func;$/;"	m	struct:collFuncData	file:
+func	chipmunk/cpSpace.h	/^	cpCollFunc func;$/;"	m	struct:cpCollPairFunc
+func	chipmunk/cpSpaceHash.c	/^	cpSpaceHashIterator func;$/;"	m	struct:eachPair	file:
+func	chipmunk/cpSpaceHash.c	/^	cpSpaceHashQueryFunc func;$/;"	m	struct:queryRehashPair	file:
+getEmptyBin	chipmunk/cpSpaceHash.c	/^getEmptyBin(cpSpaceHash *hash)$/;"	f	file:
+gravity	chipmunk/cpSpace.h	/^	cpVect gravity;$/;"	m	struct:cpSpace
+grooveConstrain	chipmunk/cpJoint.c	/^grooveConstrain(cpGrooveJoint *jnt, cpVect j){$/;"	f	file:
+grooveJointApplyImpulse	chipmunk/cpJoint.c	/^grooveJointApplyImpulse(cpJoint *joint)$/;"	f	file:
+grooveJointPreStep	chipmunk/cpJoint.c	/^grooveJointPreStep(cpJoint *joint, cpFloat dt_inv)$/;"	f	file:
+group	chipmunk/cpShape.h	/^	unsigned int group;$/;"	m	struct:cpShape
+grv_a	chipmunk/cpJoint.h	/^	cpVect grv_n, grv_a, grv_b;$/;"	m	struct:cpGrooveJoint
+grv_b	chipmunk/cpJoint.h	/^	cpVect grv_n, grv_a, grv_b;$/;"	m	struct:cpGrooveJoint
+grv_n	chipmunk/cpJoint.h	/^	cpVect grv_n, grv_a, grv_b;$/;"	m	struct:cpGrooveJoint
+grv_tn	chipmunk/cpJoint.h	/^	cpVect grv_tn;$/;"	m	struct:cpGrooveJoint
+handle	chipmunk/cpSpaceHash.h	/^	cpHandle *handle;$/;"	m	struct:cpSpaceHashBin
+handleFreeWrap	chipmunk/cpSpaceHash.c	/^handleFreeWrap(void *elt, void *unused)$/;"	f	file:
+handleQueryRehashHelper	chipmunk/cpSpaceHash.c	/^handleQueryRehashHelper(void *elt, void *data)$/;"	f	file:
+handleRehashHelper	chipmunk/cpSpaceHash.c	/^handleRehashHelper(void *elt, void *data)$/;"	f	file:
+handleSet	chipmunk/cpSpaceHash.h	/^	cpHashSet *handleSet;$/;"	m	struct:cpSpaceHash
+handleSetEql	chipmunk/cpSpaceHash.c	/^handleSetEql(void *obj, void *elt)$/;"	f	file:
+handleSetTrans	chipmunk/cpSpaceHash.c	/^handleSetTrans(void *obj, void *unused)$/;"	f	file:
+hash	chipmunk/cpArbiter.h	/^	unsigned int hash;$/;"	m	struct:cpContact
+hash	chipmunk/cpHashSet.h	/^	unsigned int hash;$/;"	m	struct:cpHashSetBin
+hash	chipmunk/cpSpaceHash.c	/^	cpSpaceHash *hash;$/;"	m	struct:queryRehashPair	file:
+hashHandle	chipmunk/cpSpaceHash.c	/^hashHandle(cpSpaceHash *hash, cpHandle *hand, cpBB bb)$/;"	f	file:
+hash_func	chipmunk/cpSpaceHash.c	/^hash_func(unsigned int x, unsigned int y, unsigned int n)$/;"	f	file:
+i	chipmunk/cpBody.h	/^	cpFloat i, i_inv;$/;"	m	struct:cpBody
+i_inv	chipmunk/cpBody.h	/^	cpFloat i, i_inv;$/;"	m	struct:cpBody
+id	chipmunk/cpShape.h	/^	unsigned int id;$/;"	m	struct:cpShape
+init	Chipmunk-Demo-5.c	/^static void init(void) {$/;"	f	file:
+iterations	chipmunk/cpSpace.h	/^	int iterations;$/;"	m	struct:cpSpace
+jAcc	chipmunk/cpJoint.h	/^	cpVect jAcc, jBias;$/;"	m	struct:cpGrooveJoint
+jAcc	chipmunk/cpJoint.h	/^	cpVect jAcc, jBias;$/;"	m	struct:cpPivotJoint
+jBias	chipmunk/cpArbiter.h	/^	cpFloat jnAcc, jtAcc, jBias;$/;"	m	struct:cpContact
+jBias	chipmunk/cpJoint.h	/^	cpFloat jnAcc, jBias;$/;"	m	struct:cpPinJoint
+jBias	chipmunk/cpJoint.h	/^	cpFloat jnAcc, jBias;$/;"	m	struct:cpSlideJoint
+jBias	chipmunk/cpJoint.h	/^	cpVect jAcc, jBias;$/;"	m	struct:cpGrooveJoint
+jBias	chipmunk/cpJoint.h	/^	cpVect jAcc, jBias;$/;"	m	struct:cpPivotJoint
+jnAcc	chipmunk/cpArbiter.h	/^	cpFloat jnAcc, jtAcc, jBias;$/;"	m	struct:cpContact
+jnAcc	chipmunk/cpJoint.h	/^	cpFloat jnAcc, jBias;$/;"	m	struct:cpPinJoint
+jnAcc	chipmunk/cpJoint.h	/^	cpFloat jnAcc, jBias;$/;"	m	struct:cpSlideJoint
+joint	chipmunk/cpJoint.h	/^	cpJoint joint;$/;"	m	struct:cpGrooveJoint
+joint	chipmunk/cpJoint.h	/^	cpJoint joint;$/;"	m	struct:cpPinJoint
+joint	chipmunk/cpJoint.h	/^	cpJoint joint;$/;"	m	struct:cpPivotJoint
+joint	chipmunk/cpJoint.h	/^	cpJoint joint;$/;"	m	struct:cpSlideJoint
+jointFreeWrap	chipmunk/cpSpace.c	/^static void   jointFreeWrap(void *ptr, void *unused){   cpJointFree((cpJoint *)  ptr);}$/;"	f	file:
+joints	chipmunk/cpSpace.h	/^	cpArray *joints;$/;"	m	struct:cpSpace
+jtAcc	chipmunk/cpArbiter.h	/^	cpFloat jnAcc, jtAcc, jBias;$/;"	m	struct:cpContact
+k1	chipmunk/cpJoint.h	/^	cpVect k1, k2;$/;"	m	struct:cpGrooveJoint
+k1	chipmunk/cpJoint.h	/^	cpVect k1, k2;$/;"	m	struct:cpPivotJoint
+k2	chipmunk/cpJoint.h	/^	cpVect k1, k2;$/;"	m	struct:cpGrooveJoint
+k2	chipmunk/cpJoint.h	/^	cpVect k1, k2;$/;"	m	struct:cpPivotJoint
+l	chipmunk/cpBB.h	/^	cpFloat l, b, r ,t;$/;"	m	struct:cpBB
+layerUpdate	Chipmunk-Demo-5.c	/^void layerUpdate(Layer *layer, GContext *ctx) {$/;"	f
+layers	chipmunk/cpShape.h	/^	unsigned int layers;$/;"	m	struct:cpShape
+m	chipmunk/cpBody.h	/^	cpFloat m, m_inv;$/;"	m	struct:cpBody
+m_inv	chipmunk/cpBody.h	/^	cpFloat m, m_inv;$/;"	m	struct:cpBody
+main	Chipmunk-Demo-5.c	/^int main(void) {$/;"	f
+main	chipmunk/stu_main.cc	/^int main(void) {$/;"	f
+max	chipmunk/cpArray.h	/^	int num, max;$/;"	m	struct:cpArray
+max	chipmunk/cpJoint.h	/^	cpFloat min, max;$/;"	m	struct:cpSlideJoint
+min	chipmunk/cpJoint.h	/^	cpFloat min, max;$/;"	m	struct:cpSlideJoint
+n	chipmunk/cpArbiter.h	/^	cpVect p, n;$/;"	m	struct:cpContact
+n	chipmunk/cpJoint.h	/^	cpVect n;$/;"	m	struct:cpPinJoint
+n	chipmunk/cpJoint.h	/^	cpVect n;$/;"	m	struct:cpSlideJoint
+n	chipmunk/cpPolyShape.h	/^	cpVect n;$/;"	m	struct:cpPolyShapeAxis
+n	chipmunk/cpShape.h	/^	cpVect a, b, n;$/;"	m	struct:cpSegmentShape
+nMass	chipmunk/cpArbiter.h	/^	cpFloat nMass, tMass, bounce;$/;"	m	struct:cpContact
+nMass	chipmunk/cpJoint.h	/^	cpFloat nMass;$/;"	m	struct:cpPinJoint
+nMass	chipmunk/cpJoint.h	/^	cpFloat nMass;$/;"	m	struct:cpSlideJoint
+next	chipmunk/cpHashSet.h	/^	struct cpHashSetBin *next;$/;"	m	struct:cpHashSetBin	typeref:struct:cpHashSetBin::cpHashSetBin
+next	chipmunk/cpSpaceHash.h	/^	struct cpSpaceHashBin *next;$/;"	m	struct:cpSpaceHashBin	typeref:struct:cpSpaceHashBin::cpSpaceHashBin
+next_prime	chipmunk/prime.h	/^next_prime(int n)$/;"	f
+num	chipmunk/cpArray.h	/^	int num, max;$/;"	m	struct:cpArray
+numContacts	chipmunk/cpArbiter.h	/^	int numContacts;$/;"	m	struct:cpArbiter
+numVerts	chipmunk/cpPolyShape.h	/^	int numVerts;$/;"	m	struct:cpPolyShape
+numcells	chipmunk/cpSpaceHash.h	/^	int numcells;$/;"	m	struct:cpSpaceHash
+obj	chipmunk/cpSpaceHash.h	/^	void *obj;$/;"	m	struct:cpHandle
+p	chipmunk/cpArbiter.h	/^	cpVect p, n;$/;"	m	struct:cpContact
+p	chipmunk/cpBody.h	/^	cpVect p, v, f, v_bias;$/;"	m	struct:cpBody
+pinJointApplyImpulse	chipmunk/cpJoint.c	/^pinJointApplyImpulse(cpJoint *joint)$/;"	f	file:
+pinJointPreStep	chipmunk/cpJoint.c	/^pinJointPreStep(cpJoint *joint, cpFloat dt_inv)$/;"	f	file:
+pivotJointApplyImpulse	chipmunk/cpJoint.c	/^pivotJointApplyImpulse(cpJoint *joint)$/;"	f	file:
+pivotJointPreStep	chipmunk/cpJoint.c	/^pivotJointPreStep(cpJoint *joint, cpFloat dt_inv)$/;"	f	file:
+poly2poly	chipmunk/cpCollision.c	/^poly2poly(cpShape *shape1, cpShape *shape2, cpContact **arr)$/;"	f	file:
+preStep	chipmunk/cpJoint.h	/^	void (*preStep)(struct cpJoint *joint, cpFloat dt_inv);$/;"	m	struct:cpJoint
+primes	chipmunk/prime.h	/^static int primes[] = {$/;"	v
+query	chipmunk/cpSpaceHash.c	/^query(cpSpaceHash *hash, cpSpaceHashBin *bin, void *obj, cpSpaceHashQueryFunc func, void *data)$/;"	f	file:
+queryFunc	chipmunk/cpSpace.c	/^queryFunc(void *p1, void *p2, void *data)$/;"	f	file:
+queryRehashPair	chipmunk/cpSpaceHash.c	/^typedef struct queryRehashPair {$/;"	s	file:
+queryRehashPair	chipmunk/cpSpaceHash.c	/^} queryRehashPair;$/;"	t	typeref:struct:queryRehashPair	file:
+queryReject	chipmunk/cpSpace.c	/^queryReject(cpShape *a, cpShape *b)$/;"	f	file:
+r	chipmunk/cpBB.h	/^	cpFloat l, b, r ,t;$/;"	m	struct:cpBB
+r	chipmunk/cpShape.h	/^	cpFloat r;$/;"	m	struct:cpCircleShape
+r	chipmunk/cpShape.h	/^	cpFloat r;$/;"	m	struct:cpSegmentShape
+r1	chipmunk/cpArbiter.h	/^	cpVect r1, r2;$/;"	m	struct:cpContact
+r1	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpGrooveJoint
+r1	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpPinJoint
+r1	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpPivotJoint
+r1	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpSlideJoint
+r2	chipmunk/cpArbiter.h	/^	cpVect r1, r2;$/;"	m	struct:cpContact
+r2	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpGrooveJoint
+r2	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpPinJoint
+r2	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpPivotJoint
+r2	chipmunk/cpJoint.h	/^	cpVect r1, r2;$/;"	m	struct:cpSlideJoint
+realloc2	chipmunk/chipmunk.c	/^void *realloc2(void *ptr, size_t size, size_t old_size) {$/;"	f
+retain	chipmunk/cpSpaceHash.h	/^	int retain;$/;"	m	struct:cpHandle
+rot	chipmunk/cpBody.h	/^	cpVect rot; $/;"	m	struct:cpBody
+seg2poly	chipmunk/cpCollision.c	/^seg2poly(cpShape *shape1, cpShape *shape2, cpContact **arr)$/;"	f	file:
+segValueOnAxis	chipmunk/cpCollision.c	/^segValueOnAxis(cpSegmentShape *seg, cpVect n, cpFloat d)$/;"	f	file:
+setIsFull	chipmunk/cpHashSet.c	/^setIsFull(cpHashSet *set)$/;"	f	file:
+shape	chipmunk/cpPolyShape.h	/^	cpShape shape;$/;"	m	struct:cpPolyShape
+shape	chipmunk/cpShape.h	/^	cpShape shape;$/;"	m	struct:cpCircleShape
+shape	chipmunk/cpShape.h	/^	cpShape shape;$/;"	m	struct:cpSegmentShape
+shapeFreeWrap	chipmunk/cpSpace.c	/^static void   shapeFreeWrap(void *ptr, void *unused){   cpShapeFree((cpShape *)  ptr);}$/;"	f	file:
+size	chipmunk/cpHashSet.h	/^	int size;$/;"	m	struct:cpHashSet
+space	Chipmunk-Demo-5.c	/^static cpSpace *space;$/;"	v	file:
+sqrt2	chipmunk/chipmunk.c	/^float sqrt2(float num) {$/;"	f
+stamp	chipmunk/cpArbiter.h	/^	int stamp;$/;"	m	struct:cpArbiter
+stamp	chipmunk/cpSpace.h	/^	int stamp;$/;"	m	struct:cpSpace
+stamp	chipmunk/cpSpaceHash.h	/^	int stamp;$/;"	m	struct:cpHandle
+stamp	chipmunk/cpSpaceHash.h	/^	int stamp;$/;"	m	struct:cpSpaceHash
+staticShapes	chipmunk/cpSpace.h	/^	cpSpaceHash *staticShapes;$/;"	m	struct:cpSpace
+surface_v	chipmunk/cpShape.h	/^	cpVect surface_v;$/;"	m	struct:cpShape
+t	chipmunk/cpBB.h	/^	cpFloat l, b, r ,t;$/;"	m	struct:cpBB
+t	chipmunk/cpBody.h	/^	cpFloat a, w, t, w_bias;$/;"	m	struct:cpBody
+tAxes	chipmunk/cpPolyShape.h	/^	cpPolyShapeAxis *tAxes;$/;"	m	struct:cpPolyShape
+tMass	chipmunk/cpArbiter.h	/^	cpFloat nMass, tMass, bounce;$/;"	m	struct:cpContact
+tVerts	chipmunk/cpPolyShape.h	/^	cpVect *tVerts;$/;"	m	struct:cpPolyShape
+ta	chipmunk/cpShape.h	/^	cpVect ta, tb, tn;$/;"	m	struct:cpSegmentShape
+table	chipmunk/cpHashSet.h	/^	cpHashSetBin **table;$/;"	m	struct:cpHashSet
+table	chipmunk/cpSpaceHash.h	/^	cpSpaceHashBin **table;$/;"	m	struct:cpSpaceHash
+target_v	chipmunk/cpArbiter.h	/^	cpVect target_v;$/;"	m	struct:cpArbiter
+tb	chipmunk/cpShape.h	/^	cpVect ta, tb, tn;$/;"	m	struct:cpSegmentShape
+tc	chipmunk/cpShape.h	/^	cpVect tc;$/;"	m	struct:cpCircleShape
+tn	chipmunk/cpShape.h	/^	cpVect ta, tb, tn;$/;"	m	struct:cpSegmentShape
+trans	chipmunk/cpHashSet.h	/^	cpHashSetTransFunc trans;$/;"	m	struct:cpHashSet
+type	chipmunk/cpShape.h	/^	cpShapeType type;$/;"	m	struct:cpShape
+u	chipmunk/cpArbiter.h	/^	cpFloat u, e;$/;"	m	struct:cpArbiter
+u	chipmunk/cpShape.h	/^	cpFloat u;$/;"	m	struct:cpShape
+updateBBCache	chipmunk/cpSpace.c	/^updateBBCache(void *ptr, void *unused)$/;"	f	file:
+v	chipmunk/cpBody.h	/^	cpVect p, v, f, v_bias;$/;"	m	struct:cpBody
+v_bias	chipmunk/cpBody.h	/^	cpVect p, v, f, v_bias;$/;"	m	struct:cpBody
+verts	chipmunk/cpPolyShape.h	/^	cpVect *verts;$/;"	m	struct:cpPolyShape
+w	chipmunk/cpBody.h	/^	cpFloat a, w, t, w_bias;$/;"	m	struct:cpBody
+w_bias	chipmunk/cpBody.h	/^	cpFloat a, w, t, w_bias;$/;"	m	struct:cpBody
+window	Chipmunk-Demo-5.c	/^static Window *window;$/;"	v	file:
+window_layer	Chipmunk-Demo-5.c	/^static Layer *window_layer;$/;"	v	file:
+window_load	Chipmunk-Demo-5.c	/^static void window_load(Window *window) {$/;"	f	file:
+window_unload	Chipmunk-Demo-5.c	/^static void window_unload(Window *window) {$/;"	f	file:
+x	chipmunk/cpVect.h	/^	cpFloat x,y;$/;"	m	struct:cpVect
+y	chipmunk/cpVect.h	/^	cpFloat x,y;$/;"	m	struct:cpVect
