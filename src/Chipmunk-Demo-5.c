@@ -1,8 +1,8 @@
 #include "pebble.h"
 #include "chipmunk/chipmunk.h"
 
-extern void demo42_init(void);
-extern void demo42_update(void);
+extern void demo5_init(void);
+extern void demo5_update(void);
 
 cpSpace *space;
 cpBody *staticBody;
@@ -19,7 +19,7 @@ void layerUpdate(Layer *layer, GContext *ctx) {
   graphics_context_set_fill_color(ctx, GColorBlack);
 	cpSpaceHashEach(space->activeShapes, &drawObject, ctx);
 	cpSpaceHashEach(space->staticShapes, &drawObject, ctx);
-  demo42_update();
+  demo5_update();
 }
 
 void drawCircleShape(GContext *ctx, cpCircleShape *circle) {
@@ -99,7 +99,7 @@ int main(void) {
   init();
 
   cpInitChipmunk();
-  demo42_init();
+  demo5_init();
 
   light_enable(true);
   app_event_loop();

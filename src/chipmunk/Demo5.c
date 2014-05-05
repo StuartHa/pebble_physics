@@ -19,36 +19,23 @@
  * SOFTWARE.
  */
  
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-
 #include "chipmunk.h"
-
-#define SLEEP_TICKS 16
 
 extern cpSpace *space;
 extern cpBody *staticBody;
 
 void demo5_update(void)
 {
-	int steps = 2;
-	cpFloat dt = 1.0/60.0/(cpFloat)steps;
-	
-	for(int i=0; i<steps; i++)
-		cpSpaceStep(space, dt);
+	cpSpaceStep(space, 1/60.0);
 }
 
 void demo5_init(void)
 {
-	staticBody = cpBodyNew(INFINITY, INFINITY);
+	staticBody = cpBodyNew(1e9, 1e9);
 	
 	cpResetShapeIdCounter();
 	space = cpSpaceNew();
-	space->iterations = 20;
-	cpSpaceResizeActiveHash(space, 40.0, 2999);
-	cpSpaceResizeStaticHash(space, 40.0, 999);
-	space->gravity = cpv(0, -300);
+	space->gravity = cpv(0, 300);
 	
 	cpBody *body;
 	
@@ -56,10 +43,10 @@ void demo5_init(void)
 	
 	int num = 4;
 	cpVect verts[] = {
-		cpv(-3,-20),
-		cpv(-3, 20),
-		cpv( 3, 20),
-		cpv( 3,-20),
+		cpv(-2,-15),
+		cpv(-2, 15),
+		cpv( 2, 15),
+		cpv( 2,-15),
 	};
 	
 	shape = cpSegmentShapeNew(staticBody, cpv(-600,160), cpv(600,160), 0.0f);
@@ -68,20 +55,23 @@ void demo5_init(void)
 	
 	cpFloat u = 0.6;
 	
-	int n = 9;
+	int n = 2;
 	for(int i=1; i<=n; i++){
-		cpVect offset = cpv(-i*60/2.0f, (n - i)*52);
+		cpVect offset = cpv(-i*15, -(n - i)*36);
+		// cpVect offset = cpv(-i*60/2.0f, (n - i)*);
 		
 		for(int j=0; j<i; j++){
 			body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
-			body->p = cpvadd(cpv(j*60, -220), offset);
+			// body->p = cpvadd(cpv(j*60, -220), offset);
+			body->p = cpvadd(cpv(j*30 + 72, 145), offset);
 			cpSpaceAddBody(space, body);
 			shape = cpPolyShapeNew(body, num, verts, cpvzero);
 			shape->e = 0.0; shape->u = u;
 			cpSpaceAddShape(space, shape);
 
 			body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
-			body->p = cpvadd(cpv(j*60, -197), offset);
+			// body->p = cpvadd(cpv(j*60, -197), offset);
+			body->p = cpvadd(cpv(j*30 + 72, 128), offset);
 			cpBodySetAngle(body, 3.14/2.0f);
 			cpSpaceAddBody(space, body);
 			shape = cpPolyShapeNew(body, num, verts, cpvzero);
@@ -90,29 +80,30 @@ void demo5_init(void)
 			
 			if(j == (i - 1)) continue;
 			body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
-			body->p = cpvadd(cpv(j*60 + 30, -191), offset);
+			// body->p = cpvadd(cpv(j*60 + 30, -191), offset);
+			body->p = cpvadd(cpv(j*30 + 72 + 15, 126), offset);
 			cpBodySetAngle(body, 3.14/2.0f);
 			cpSpaceAddBody(space, body);
 			shape = cpPolyShapeNew(body, num, verts, cpvzero);
 			shape->e = 0.0; shape->u = u;
-			cpSpaceAddShape(space, shape);		
+			cpSpaceAddShape(space, shape);
 		}
 
 		body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
-		body->p = cpvadd(cpv(-17, -174), offset);
+		// body->p = cpvadd(cpv(-7, -174), offset);
+		body->p = cpvadd(cpv(72 - 12, 128 - 17), offset);
 		cpSpaceAddBody(space, body);
 		shape = cpPolyShapeNew(body, num, verts, cpvzero);
 		shape->e = 0.0; shape->u = u;
 		cpSpaceAddShape(space, shape);		
 
 		body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
-		body->p = cpvadd(cpv((i - 1)*60 + 17, -174), offset);
+		// body->p = cpvadd(cpv((i - 1)*60 + 17, -174), offset);
+		body->p = cpvadd(cpv(72 + 12 + (i-1)*30, 128 - 17), offset);
 		cpSpaceAddBody(space, body);
 		shape = cpPolyShapeNew(body, num, verts, cpvzero);
 		shape->e = 0.0; shape->u = u;
 		cpSpaceAddShape(space, shape);		
 	}
 	
-	body->w = -1;
-	body->v = cpv(-body->w*20, 0);
 }
