@@ -108,7 +108,6 @@ static void        freeWrap(void *ptr, void *unused){          free(            
 static void   shapeFreeWrap(void *ptr, void *unused){   cpShapeFree((cpShape *)  ptr);}
 static void arbiterFreeWrap(void *ptr, void *unused){ cpArbiterFree((cpArbiter *)ptr);}
 static void    bodyFreeWrap(void *ptr, void *unused){    cpBodyFree((cpBody *)   ptr);}
-static void   jointFreeWrap(void *ptr, void *unused){   cpJointFree((cpJoint *)  ptr);}
 
 cpSpace*
 cpSpaceAlloc(void)
@@ -138,8 +137,6 @@ cpSpaceInit(cpSpace *space)
 	space->arbiters = cpArrayNew(0);
 	space->contactSet = cpHashSetNew(0, contactSetEql, contactSetTrans);
 	
-	space->joints = cpArrayNew(0);
-	
 	cpCollPairFunc pairFunc = {0, 0, alwaysCollide, NULL};
 	space->defaultPairFunc = pairFunc;
 	space->collFuncSet = cpHashSetNew(0, collFuncSetEql, collFuncSetTrans);
@@ -161,8 +158,6 @@ cpSpaceDestroy(cpSpace *space)
 	cpSpaceHashFree(space->activeShapes);
 	
 	cpArrayFree(space->bodies);
-	
-	cpArrayFree(space->joints);
 	
 	if(space->contactSet)
 		cpHashSetEach(space->contactSet, &arbiterFreeWrap, NULL);
@@ -187,7 +182,6 @@ cpSpaceFreeChildren(cpSpace *space)
 	cpSpaceHashEach(space->staticShapes, &shapeFreeWrap, NULL);
 	cpSpaceHashEach(space->activeShapes, &shapeFreeWrap, NULL);
 	cpArrayEach(space->bodies, &bodyFreeWrap, NULL);
-	cpArrayEach(space->joints, &jointFreeWrap, NULL);
 }
 
 void
@@ -238,12 +232,6 @@ cpSpaceAddBody(cpSpace *space, cpBody *body)
 }
 
 void
-cpSpaceAddJoint(cpSpace *space, cpJoint *joint)
-{
-	cpArrayPush(space->joints, joint);
-}
-
-void
 cpSpaceRemoveShape(cpSpace *space, cpShape *shape)
 {
 	cpSpaceHashRemove(space->activeShapes, shape, shape->id);
@@ -259,12 +247,6 @@ void
 cpSpaceRemoveBody(cpSpace *space, cpBody *body)
 {
 	cpArrayDeleteObj(space->bodies, body);
-}
-
-void
-cpSpaceRemoveJoint(cpSpace *space, cpJoint *joint)
-{
-	cpArrayDeleteObj(space->joints, joint);
 }
 
 void
@@ -420,7 +402,6 @@ cpSpaceStep(cpSpace *space, cpFloat dt)
 
 	cpArray *bodies = space->bodies;
 	cpArray *arbiters = space->arbiters;
-	cpArray *joints = space->joints;
 	
 	// Empty the arbiter list.
 	cpHashSetReject(space->contactSet, &contactSetReject, space);
@@ -442,20 +423,10 @@ cpSpaceStep(cpSpace *space, cpFloat dt)
 	for(int i=0; i<arbiters->num; i++)
 		cpArbiterPreStep((cpArbiter *)arbiters->arr[i], dt_inv);
 
-	// Prestep the joints.
-	for(int i=0; i<joints->num; i++){
-		cpJoint *joint = (cpJoint *)joints->arr[i];
-		joint->preStep(joint, dt_inv);
-	}
-	
 	// Run the impulse solver.
 	for(int i=0; i<space->iterations; i++){
 		for(int j=0; j<arbiters->num; j++)
 			cpArbiterApplyImpulse((cpArbiter *)arbiters->arr[j]);
-		for(int j=0; j<joints->num; j++){
-			cpJoint *joint = (cpJoint *)joints->arr[j];
-			joint->applyImpulse(joint);
-		}
 	}
 
 //	cpFloat dvsq = cpvdot(space->gravity, space->gravity);

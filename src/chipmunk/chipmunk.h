@@ -59,7 +59,7 @@ cpfmin(cpFloat a, cpFloat b)
 #include "cpArbiter.h"
 #include "cpCollision.h"
 	
-#include "cpJoint.h"
+//#include "cpJoint.h"
 
 #include "cpSpace.h"
 

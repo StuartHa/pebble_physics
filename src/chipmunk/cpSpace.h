@@ -87,12 +87,10 @@ void cpSpaceSetDefaultCollisionPairFunc(cpSpace *space, cpCollFunc func, void *d
 void cpSpaceAddShape(cpSpace *space, cpShape *shape);
 void cpSpaceAddStaticShape(cpSpace *space, cpShape *shape);
 void cpSpaceAddBody(cpSpace *space, cpBody *body);
-void cpSpaceAddJoint(cpSpace *space, cpJoint *joint);
 
 void cpSpaceRemoveShape(cpSpace *space, cpShape *shape);
 void cpSpaceRemoveStaticShape(cpSpace *space, cpShape *shape);
 void cpSpaceRemoveBody(cpSpace *space, cpBody *body);
-void cpSpaceRemoveJoint(cpSpace *space, cpJoint *joint);
 
 // Iterator function for iterating the bodies in a space.
 typedef void (*cpSpaceBodyIterator)(cpBody *body, void *data);
