@@ -31,7 +31,7 @@ void demo5_update(void)
 
 void demo5_init(void)
 {
-	staticBody = cpBodyNew(1e9, 1e9);
+	staticBody = cpBodyNew(1e7, 1e7);
 	
 	cpResetShapeIdCounter();
 	space = cpSpaceNew();
@@ -55,6 +55,14 @@ void demo5_init(void)
 	
 	cpFloat u = 0.6;
 	
+			body = cpBodyNew(1.0, cpMomentForPoly(8.0, num, verts, cpvzero));
+			// body->p = cpvadd(cpv(j*60, -220), offset);
+			body->p = cpv(120, 80);
+      body->v = cpv(-250, 0);
+			cpSpaceAddBody(space, body);
+			shape = cpCircleShapeNew(body, 10, cpvzero);
+			shape->e = 0.0; shape->u = u;
+			cpSpaceAddShape(space, shape);
 	int n = 2;
 	for(int i=1; i<=n; i++){
 		cpVect offset = cpv(-i*15, -(n - i)*36);
@@ -89,6 +97,7 @@ void demo5_init(void)
 			cpSpaceAddShape(space, shape);
 		}
 
+    if (i == 2) {
 		body = cpBodyNew(1.0, cpMomentForPoly(1.0, num, verts, cpvzero));
 		// body->p = cpvadd(cpv(-7, -174), offset);
 		body->p = cpvadd(cpv(72 - 12, 128 - 17), offset);
@@ -104,6 +113,7 @@ void demo5_init(void)
 		shape = cpPolyShapeNew(body, num, verts, cpvzero);
 		shape->e = 0.0; shape->u = u;
 		cpSpaceAddShape(space, shape);		
+    }
 	}
 	
 }
